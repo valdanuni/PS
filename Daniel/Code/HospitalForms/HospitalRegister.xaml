@@ -1,0 +1,44 @@
+﻿<Window x:Class="PS_Hospital_System_Project_2019.HospitalRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PS_Hospital_System_Project_2019"
+        mc:Ignorable="d"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Hospital Register" Height="517" Width="800" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen" IsEnabled="True" MaxWidth="800" MaxHeight="720" ScrollViewer.VerticalScrollBarVisibility="Disabled" MouseDown="Window_MouseDown" ShowInTaskbar="True" Focusable="True">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled" MaxWidth="800" MaxHeight="720" >
+        <Rectangle Height="517"  VerticalAlignment="Top" Margin="0,0,-3,-0.2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF93FA93"/>
+                    <GradientStop Color="#FF11E87C" Offset="0.2"/>
+                    <GradientStop Color="#FF5CD45A" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Height="404" Fill="White" VerticalAlignment="Top" Margin="25,69,19,0" RadiusY="21.2" RadiusX="21.2"/>
+        <Grid Width="750" Height="623" VerticalAlignment="Bottom" Margin="25,0,25,10">
+
+            <TextBlock Text="Hospital Register " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="304,135,296,0" Foreground="Gray" FontSize="18" Height="30" Width="150"/>
+            <StackPanel VerticalAlignment="Center"  Margin="20,221,0,122" Height="280">
+                <TextBox x:Name="Name" materialDesign:HintAssist.Hint="Hospital Name" Height="55" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="HospitalName_LostFocus"/>
+                <TextBox x:Name="Owner" materialDesign:HintAssist.Hint="Owner(First and Last Name)" Height="55" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="HospitalOwner_LostFocus"/>
+                <TextBox x:Name="Address" materialDesign:HintAssist.Hint="Address" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+                <TextBox x:Name="MobilePhone" materialDesign:HintAssist.Hint="MobilePhone" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+            </StackPanel>
+        </Grid>
+        <Button VerticalAlignment="Bottom" Margin="299,0,301,105" HorizontalAlignment="Center" Width="200" Content="Register" Background="#FF30F130" FontSize="18" Foreground="Black" RenderTransformOrigin="0.504,-1.387" Click="Button_Click" ></Button>
+        <Button x:Name="ExitBtn" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="745,0,-3,0" VerticalAlignment="Top" Width="58" Height="35" Click="ExitBtn_Click">
+            <ContentControl>
+                <Image Source="../Assets/xButton.png" Height="24" RenderTransformOrigin="0.5,0.5" Width="55" />
+            </ContentControl>
+        </Button>
+        <Button x:Name="MinimizeBtn" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="712,0,0,0" VerticalAlignment="Top" Width="58" Height="35" Click="MinimizeBtn_Click">
+            <ContentControl>
+                <Image Source="../Assets/minimize.png" Height="26" RenderTransformOrigin="0.5,0.5" Width="33" />
+            </ContentControl>
+        </Button>
+    </Grid>
+</Window>

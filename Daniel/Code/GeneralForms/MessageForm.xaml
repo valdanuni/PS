@@ -1,0 +1,32 @@
+﻿<Window x:Class="PS_Hospital_System_Project_2019.MessageForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PS_Hospital_System_Project_2019"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="250" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" ShowInTaskbar="True"  Focusable="True" MouseDown="Window_MouseDown">
+    <Grid>
+        <TextBlock x:Name="MsgTitle"  DockPanel.Dock="Top" Text="{Binding Path=MessageTitle}" HorizontalAlignment="Stretch"  VerticalAlignment="Top" FontSize="18" Background="SandyBrown" TextAlignment="Center" Foreground="WhiteSmoke" FontFamily="Arial" FontWeight="DemiBold" Height="35" Padding="5"></TextBlock>
+        <Rectangle Height="215"  VerticalAlignment="Top" Margin="0,35,0,-0.4" RenderTransformOrigin="0.5,0.5">
+
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.2">
+                    <GradientStop Color="Coral" />
+                    <GradientStop Color="Salmon" Offset="0.3"/>
+                    <GradientStop Color="Chocolate" Offset="0.8"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="143" Fill="White" VerticalAlignment="Bottom" Width="auto" Margin="32,0,34,48.6" RadiusY="21.2" RadiusX="21.2"/>
+        <Button x:Name="ExitBtn"  Background="Transparent"  BorderBrush="Transparent" HorizontalAlignment="Left" Margin="448,-5,-8,0" VerticalAlignment="Top" RenderTransformOrigin="-0.613,0.156" Width="60" Height="40" Click="ExitBtn_Click">
+            <ContentControl>
+                <Image Source="../Assets/xButton.png" Height="28" RenderTransformOrigin="0.5,0.5" Width="55" />
+            </ContentControl>
+        </Button>
+        <TextBlock x:Name="MsgContent" TextWrapping="Wrap" TextAlignment="Center"  Text="{Binding Path=MessageContent}" VerticalAlignment="Center" FontSize="18"  Margin="56,58,48,48.6"/>
+        <Button x:Name="ConfirmBtn" Visibility="Collapsed" Content="Yes" FontSize="16" Foreground="Black" Background="BlueViolet"  HorizontalAlignment="Left" Margin="96,208,0,7.6" Width="90" Height="Auto" Click="ConfirmBtn_Click"/>
+        <Button x:Name="CancelBtn" Visibility="Collapsed" Content="No" FontSize="16" Foreground="Black" Background="PaleVioletRed"  HorizontalAlignment="Right"  Width="90"  Height="Auto" Margin="0,208,117,9.6" Click="CancelBtn_Click"/>
+
+    </Grid>
+</Window>

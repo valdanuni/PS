@@ -1,0 +1,243 @@
+﻿<Window x:Class="PS_Hospital_System_Project_2019.HospitalForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PS_Hospital_System_Project_2019"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         mc:Ignorable="d" Height="600" Width="1073" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" ShowInTaskbar="True"  Focusable="True" MouseDown="Window_MouseDown">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="268*"/>
+            <RowDefinition Height="219*"/>
+        </Grid.RowDefinitions>
+        <StackPanel  Background="GhostWhite" Margin="0,0,10,10" AllowDrop="True" Grid.RowSpan="3">
+            <Grid Height="100">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,0,114.2,0">
+                    <Button Uid="0" Width="173" Content="Personal Information" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" />
+                    <Button Uid="1" Width="150" Content="Patient Visitations" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click"/>
+                    <Button Uid="2" Width="150" Content="Doctors" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click"/>
+                    <Button Uid="3" Width="150" Content="Reservations" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click"/>
+                    <Button Uid="4" Width="150" Content="Register Doctor" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Register_Doctor_Click"/>
+                </StackPanel>
+                <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FF2FDA85" HorizontalAlignment="Left" Margin="26,45,0,50" Focusable="True"/>
+                <Button x:Name="ExitBtn"  Background="Transparent"  BorderBrush="Transparent" HorizontalAlignment="Left" Margin="1009,0,-5.8,0" VerticalAlignment="Top" RenderTransformOrigin="-0.613,0.156" Width="60" Height="40" Click="ExitBtn_Click">
+                    <ContentControl>
+                        <Image Source="../Assets/xButton.png" Height="28" RenderTransformOrigin="0.5,0.5" Width="55" />
+                    </ContentControl>
+                </Button>
+                <Button x:Name="minimizeBtn" Background="Transparent"  BorderBrush="Transparent" HorizontalAlignment="Left" Margin="949,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.613,0.156" Width="55" Height="40" Click="MinimizeBtn_Click" >
+                    <ContentControl>
+                        <Image Source="../Assets/minimize.png" Height="25" RenderTransformOrigin="0.5,0.5" Width="33" />
+                    </ContentControl>
+                </Button>
+            </Grid>
+
+        </StackPanel>
+
+        <Grid x:Name="GridMain" Margin="10,55,0,67" Grid.RowSpan="3"  >
+            <Rectangle Height="527"  VerticalAlignment="Center"  Margin="-10,19,0,-68" >
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF36EA36"/>
+                        <GradientStop Color="#FF2FDA85" Offset="0.5"/>
+                        <GradientStop Color="#FF3DB93B" Offset="0.8"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Grid>
+        <Grid x:Name="PersonalInfo"   Visibility="Visible"  Margin="10,81,506,0" Grid.RowSpan="3" >
+            <StackPanel  Margin="10,10,44,0" Height="464" VerticalAlignment="Top" >
+                <TextBox x:Name="HospitalName" materialDesign:HintAssist.Hint="Hospital Name" Text="{Binding HospitalObject.Name}" IsReadOnly="False" Height="42" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,0,0" LostFocus="HospitalName_LostFocus" />
+                <TextBox x:Name="HospitalOwner" materialDesign:HintAssist.Hint="Owner" Text="{Binding HospitalObject.Owner}" IsReadOnly="False" Height="48" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,0,0" LostFocus="HospitalOwner_LostFocus" />
+                <TextBox x:Name="Address" materialDesign:HintAssist.Hint="Address" Text="{Binding HospitalObject.Address}" IsReadOnly="False" Height="52" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,0,0" />
+                <TextBox x:Name="MobilePhone" materialDesign:HintAssist.Hint="Mobile Phone" Text="{Binding HospitalObject.MobilePhone}" IsReadOnly="False" Height="52" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,0,0"/>
+            </StackPanel>
+            <Button x:Name="SaveBtn" Content="Save" FontSize="18" Foreground="Black" Background="BlueViolet"  HorizontalAlignment="Left" Visibility="Visible" Margin="39,477,-477,10" Width="980" Click="SaveBtn_Click"/>
+        </Grid>
+
+        <DataGrid x:Name="PatientVisitations"  AutoGenerateColumns="False"   Visibility="Collapsed"  Height="509"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="1073" Background="Transparent" BorderBrush="Transparent" Margin="0,81,0,0"
+                   ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"  IsReadOnly="True" materialDesign:ScrollBarAssist.ThumbHeight="300" RenderTransformOrigin="0.462,-0.162" Grid.RowSpan="3" >
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader" >
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="" Width="SizeToCells" IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <Image Source="{Binding Source=../Assets/infoIcon.png}" Width="30" Height="30"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="DateTime"   FontSize="16"   Binding="{Binding Path=VisitTime}" MinWidth="300" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Patient" FontSize="16" Binding="{Binding Path=Patient.FullName}" MinWidth="300">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Doctor" FontSize="16" Binding="{Binding Path=Doctor.FullName}" MinWidth="300" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="VisitBtn" Visibility="Collapsed" Content="Add Visitation" FontSize="18" Foreground="Black" Background="PaleVioletRed"  HorizontalAlignment="Left" Margin="22,177.2,0,10" Width="1027" Grid.Row="2" Click="VisitBtn_Click"/>
+        <DataGrid x:Name="Doctors"  AutoGenerateColumns="False"   Visibility="Collapsed"  Height="509"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="1073" Background="Transparent" BorderBrush="Transparent" Margin="0,81,0,0"
+                   ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"  IsReadOnly="True" materialDesign:ScrollBarAssist.ThumbHeight="300" RenderTransformOrigin="0.462,-0.162" Grid.RowSpan="3">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader" >
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Columns >
+                <DataGridTemplateColumn Header="" Width="SizeToCells" IsReadOnly="True" MinWidth="50" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <Image Source="{Binding Source=../Assets/infoIcon.png}" Width="30" Height="30"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Doctor" FontSize="16" Binding="{Binding Path=FullName}" MinWidth="335" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Specialization" FontSize="16" Binding="{Binding Path=Specialization}" MinWidth="335" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="AddDoctorBtn" Content="Add Doctor" FontSize="18" Visibility="Collapsed" Foreground="Black" Background="BlueViolet"  HorizontalAlignment="Left" Margin="46,172.2,0,10" Width="980" Grid.Row="2" Height="Auto" Click="AddDoctorBtn_Click"/>
+        <DataGrid x:Name="Reservations"  AutoGenerateColumns="False"   Visibility="Collapsed"  Height="452"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="1073" Background="Transparent" BorderBrush="Transparent"
+                   ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"  IsReadOnly="True" materialDesign:ScrollBarAssist.ThumbHeight="300" RenderTransformOrigin="0.462,-0.162" Grid.RowSpan="3" Margin="0,81,0,0">
+
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader" >
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="" Width="SizeToCells" IsReadOnly="True" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <Image Source="{Binding Source=../Assets/infoIcon.png}" Width="30" Height="30"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Date Time"   FontSize="16"   Binding="{Binding Path=ReservationTime}" MinWidth="250" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Patient" FontSize="16" Binding="{Binding Path=Patient.FullName}" MinWidth="250" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Doctor" FontSize="16" Binding="{Binding Path=Doctor.FullName}" MinWidth="250" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Reason" FontSize="16" Binding="{Binding Path=Reason}" MinWidth="250" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="ReserveBtn" Visibility="Collapsed" Content="Make a reservation" FontSize="18" Foreground="Black" Background="PaleVioletRed"  HorizontalAlignment="Left" Margin="10,167.2,0,20" Click="ReserveBtn_Click" Grid.Row="2" Width="1053"/>
+    </Grid>
+</Window>

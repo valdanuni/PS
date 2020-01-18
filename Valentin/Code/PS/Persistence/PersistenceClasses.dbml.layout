@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.125, 11.625" name="PersistenceClasses">
+  <DataContextMoniker Name="/PersistenceClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1cf6b6ef-caa9-4c13-9d0f-78f84857be3f" absoluteBounds="5.5, 5.125, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/Doctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16f76ef3-1e9b-4781-9ed8-1a4fe7448826" absoluteBounds="5.5150000000000006, 5.5850000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d269bae9-e2ff-4bb5-9250-52744ea668f1" absoluteBounds="9.875, 9.375, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/HistoricalReservation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c49af69d-f453-41fe-bb8d-03f55f8f2800" absoluteBounds="9.89, 9.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="565dc2b6-0b82-4d21-a884-c0538804bcd8" absoluteBounds="4, 8.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/HistoricalDiagnosis" />
+      <nestedChildShapes>
+        <elementListCompartment Id="086ffc30-1cb4-401e-bb76-6ab99f28d1ff" absoluteBounds="4.0150000000000006, 9.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0c0959f-70cf-4f82-8471-c2837901b448" absoluteBounds="6.875, 9, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/HistoricalVisit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c0af8d5-38db-4dd6-95dd-31384a1f24d9" absoluteBounds="6.8900000000000006, 9.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1618a11a-6aae-47b7-8f30-4dfed2b3040c" absoluteBounds="10.875, 5.25, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/Hospital" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa35138c-5a8c-476c-8593-5135c4fd34fd" absoluteBounds="10.89, 5.7100000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3093c31-9370-47f6-a065-23d82068c909" absoluteBounds="8.125, 5.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/HospitalDoctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c60b9e97-e9c4-4e14-86d1-6bcac851691f" absoluteBounds="8.14, 6.0850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6052aed-0e50-42f6-8ba3-77f66ade384f" absoluteBounds="2.5, 5, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b817048-f3ed-4724-9f30-dfea4332c265" absoluteBounds="2.5150000000000006, 5.4600000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="588ad783-009f-497d-8cea-c008f28cc880" absoluteBounds="5.875, 2.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/SysUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6048cfd-2d73-4ab2-b472-29f88b8cfea5" absoluteBounds="5.8900000000000006, 3.0850000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bff26b79-b8c0-49d8-81b9-15adbb1ecc73" absoluteBounds="2.375, 2.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/PersistenceClassesDataContext/SysUserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbeea616-6c4c-439f-8136-5b4cfd61bff6" absoluteBounds="2.3900000000000006, 2.9600000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.6875 : 4.39589680989583); (6.6875 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/SysUser/SysUser_Doctor" />
+      <nodes>
+        <classShapeMoniker Id="588ad783-009f-497d-8cea-c008f28cc880" />
+        <classShapeMoniker Id="1cf6b6ef-caa9-4c13-9d0f-78f84857be3f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.4375 : 7.6651025390625); (6.4375 : 11.0857975260417); (9.875 : 11.0857975260417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Doctor/Doctor_HistoricalReservation" />
+      <nodes>
+        <classShapeMoniker Id="1cf6b6ef-caa9-4c13-9d0f-78f84857be3f" />
+        <classShapeMoniker Id="d269bae9-e2ff-4bb5-9250-52744ea668f1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.375 : 7.2131982421875); (11.375 : 9.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Hospital/Hospital_HistoricalReservation" />
+      <nodes>
+        <classShapeMoniker Id="1618a11a-6aae-47b7-8f30-4dfed2b3040c" />
+        <classShapeMoniker Id="d269bae9-e2ff-4bb5-9250-52744ea668f1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.02343625 : 7.5401025390625); (3.02343625 : 10.9283446679687); (9.875 : 10.9283446679687)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Patient/Patient_HistoricalReservation" />
+      <nodes>
+        <classShapeMoniker Id="a6052aed-0e50-42f6-8ba3-77f66ade384f" />
+        <classShapeMoniker Id="d269bae9-e2ff-4bb5-9250-52744ea668f1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 7.6651025390625); (5.75 : 8.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Doctor/Doctor_HistoricalDiagnosis" />
+      <nodes>
+        <classShapeMoniker Id="1cf6b6ef-caa9-4c13-9d0f-78f84857be3f" />
+        <classShapeMoniker Id="565dc2b6-0b82-4d21-a884-c0538804bcd8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.25 : 7.5401025390625); (4.25 : 8.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Patient/Patient_HistoricalDiagnosis" />
+      <nodes>
+        <classShapeMoniker Id="a6052aed-0e50-42f6-8ba3-77f66ade384f" />
+        <classShapeMoniker Id="565dc2b6-0b82-4d21-a884-c0538804bcd8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.1875 : 7.6651025390625); (7.1875 : 9)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Doctor/Doctor_HistoricalVisit" />
+      <nodes>
+        <classShapeMoniker Id="1cf6b6ef-caa9-4c13-9d0f-78f84857be3f" />
+        <classShapeMoniker Id="c0c0959f-70cf-4f82-8471-c2837901b448" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.40625 : 7.2131982421875); (12.40625 : 9.15625); (8.875 : 9.15625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Hospital/Hospital_HistoricalVisit" />
+      <nodes>
+        <classShapeMoniker Id="1618a11a-6aae-47b7-8f30-4dfed2b3040c" />
+        <classShapeMoniker Id="c0c0959f-70cf-4f82-8471-c2837901b448" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.6093775 : 7.5401025390625); (3.6093775 : 10.6146468098958); (6.35416666666667 : 10.6146468098958 : JumpStart); (6.52083333333333 : 10.6146468098958 : JumpEnd); (6.875 : 10.6146468098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Patient/Patient_HistoricalVisit" />
+      <nodes>
+        <classShapeMoniker Id="a6052aed-0e50-42f6-8ba3-77f66ade384f" />
+        <classShapeMoniker Id="c0c0959f-70cf-4f82-8471-c2837901b448" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.875 : 3.51044840494792); (11.875 : 3.51044840494792); (11.875 : 5.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/SysUser/SysUser_Hospital" />
+      <nodes>
+        <classShapeMoniker Id="588ad783-009f-497d-8cea-c008f28cc880" />
+        <classShapeMoniker Id="1618a11a-6aae-47b7-8f30-4dfed2b3040c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 6.31814697265625); (8.125 : 6.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Doctor/Doctor_HospitalDoctor" />
+      <nodes>
+        <classShapeMoniker Id="1cf6b6ef-caa9-4c13-9d0f-78f84857be3f" />
+        <classShapeMoniker Id="d3093c31-9370-47f6-a065-23d82068c909" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.875 : 6.31814697265625); (10.125 : 6.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/Hospital/Hospital_HospitalDoctor" />
+      <nodes>
+        <classShapeMoniker Id="1618a11a-6aae-47b7-8f30-4dfed2b3040c" />
+        <classShapeMoniker Id="d3093c31-9370-47f6-a065-23d82068c909" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.875 : 4.07619466145833); (4.46875 : 4.07619466145833); (4.46875 : 5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/SysUser/SysUser_Patient" />
+      <nodes>
+        <classShapeMoniker Id="588ad783-009f-497d-8cea-c008f28cc880" />
+        <classShapeMoniker Id="a6052aed-0e50-42f6-8ba3-77f66ade384f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.375 : 3.15949625651042); (5.875 : 3.15949625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PersistenceClassesDataContext/SysUserRole/SysUserRole_SysUser" />
+      <nodes>
+        <classShapeMoniker Id="bff26b79-b8c0-49d8-81b9-15adbb1ecc73" />
+        <classShapeMoniker Id="588ad783-009f-497d-8cea-c008f28cc880" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

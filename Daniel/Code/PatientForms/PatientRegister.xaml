@@ -1,0 +1,50 @@
+﻿<Window x:Class="PS_Hospital_System_Project_2019.PatientRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PS_Hospital_System_Project_2019"
+        mc:Ignorable="d"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Patient Register" Height="649" Width="800" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen" IsEnabled="True" MaxWidth="800" MaxHeight="720" ScrollViewer.VerticalScrollBarVisibility="Disabled" MouseDown="Window_MouseDown" ShowInTaskbar="True" Focusable="True">
+    <Grid >
+        <Rectangle Height="649"  VerticalAlignment="Top" Margin="0,0,-3,-0.2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF93FA93"/>
+                    <GradientStop Color="#FF11E87C" Offset="0.2"/>
+                    <GradientStop Color="#FF5CD45A" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Height="517" Fill="White" VerticalAlignment="Bottom" Margin="19,0,25,56" RadiusY="21.2" RadiusX="21.2"/>
+        <Grid Width="750" Height="620" VerticalAlignment="Bottom" Margin="22,0,22,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Patient Register " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="309,10,312.4,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="10,59,10.4,166" Height="395" Grid.ColumnSpan="2">
+                <TextBox x:Name="Name" materialDesign:HintAssist.Hint="First Name" Height="55" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="FirstName_LostFocus_1"/>
+                <TextBox x:Name="MiddleName"  materialDesign:HintAssist.Hint="Second Name" Height="59" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="MiddleName_LostFocus"/>
+                <TextBox x:Name="FamilyName" materialDesign:HintAssist.Hint="Last Name" Height="57" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="LastName_LostFocus"/>
+                <TextBox x:Name="Age" materialDesign:HintAssist.Hint="Age" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="Age_LostFocus"/>
+                <TextBox x:Name="Egn" materialDesign:HintAssist.Hint="EGN" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="EGN_LostFocus"/>
+                <TextBox x:Name="Address" materialDesign:HintAssist.Hint="Address" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" />
+                <TextBox x:Name="MobilePhone" materialDesign:HintAssist.Hint="Mobile Phone" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" LostFocus="MobilePhone_LostFocus"/>
+            </StackPanel>
+        </Grid>
+        <Button VerticalAlignment="Bottom" Margin="301,0,299,99" HorizontalAlignment="Center" Width="200" Content="Register" Background="#FF30F130" FontSize="18" Foreground="Black" RenderTransformOrigin="0.51,-2.059" Click="RegisterBtn_Click"></Button>
+        <Button x:Name="ExitBtn" HorizontalAlignment="Left" Background="Transparent" BorderBrush="Transparent" Margin="742,0,-3,0" VerticalAlignment="Top" Width="61"  Height="36" Click="ExitBtn_Click">
+            <ContentControl>
+                <Image Source="../Assets/xButton.png" Height="28" RenderTransformOrigin="0.5,0.5" Width="55" />
+            </ContentControl>
+        </Button>
+        <Button x:Name="MinimizeBtn" HorizontalAlignment="Left" Background="Transparent" BorderBrush="Transparent" Margin="698,0,0,0" VerticalAlignment="Top" Width="57"  Height="36" Click="MinimizeBtn_Click">
+            <ContentControl>
+                <Image Source="../Assets/minimize.png" Height="25" RenderTransformOrigin="0.5,0.5" Width="33" />
+            </ContentControl>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="master" Class="PersistenceClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-VAJFCTD\SQLEXPRESS;Initial Catalog=master;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="masterConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Doctor" Member="Doctors">
+    <Type Name="Doctor">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FamilyName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Egn" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePhone" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Specialization" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Doctor_HistoricalReservation" Member="HistoricalReservations" ThisKey="Guid" OtherKey="DoctorId" Type="HistoricalReservation" />
+      <Association Name="Doctor_HistoricalDiagnosis" Member="HistoricalDiagnosis" ThisKey="Guid" OtherKey="DoctorId" Type="HistoricalDiagnosis" />
+      <Association Name="Doctor_HistoricalVisit" Member="HistoricalVisits" ThisKey="Guid" OtherKey="DoctorId" Type="HistoricalVisit" />
+      <Association Name="Doctor_HospitalDoctor" Member="HospitalDoctors" ThisKey="Guid" OtherKey="DoctorId" Type="HospitalDoctor" />
+      <Association Name="SysUser_Doctor" Member="SysUser" ThisKey="UserId" OtherKey="Guid" Type="SysUser" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistoricalReservation" Member="HistoricalReservations">
+    <Type Name="HistoricalReservation">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="HospitalId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DoctorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ReservationTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Reason" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Doctor_HistoricalReservation" Member="Doctor" ThisKey="DoctorId" OtherKey="Guid" Type="Doctor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Hospital_HistoricalReservation" Member="Hospital" ThisKey="HospitalId" OtherKey="Guid" Type="Hospital" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Patient_HistoricalReservation" Member="Patient" ThisKey="PatientId" OtherKey="Guid" Type="Patient" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistoricalPatientSickness" Member="HistoricalDiagnosis">
+    <Type Name="HistoricalDiagnosis">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DoctorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SicknessDescription" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DiagnosisTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Doctor_HistoricalDiagnosis" Member="Doctor" ThisKey="DoctorId" OtherKey="Guid" Type="Doctor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Patient_HistoricalDiagnosis" Member="Patient" ThisKey="PatientId" OtherKey="Guid" Type="Patient" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HistoricalVisit" Member="HistoricalVisits">
+    <Type Name="HistoricalVisit">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="HospitalId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DoctorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisitTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Doctor_HistoricalVisit" Member="Doctor" ThisKey="DoctorId" OtherKey="Guid" Type="Doctor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Hospital_HistoricalVisit" Member="Hospital" ThisKey="HospitalId" OtherKey="Guid" Type="Hospital" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Patient_HistoricalVisit" Member="Patient" ThisKey="PatientId" OtherKey="Guid" Type="Patient" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Hospital" Member="Hospitals">
+    <Type Name="Hospital">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePhone" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Owner" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Hospital_HistoricalReservation" Member="HistoricalReservations" ThisKey="Guid" OtherKey="HospitalId" Type="HistoricalReservation" />
+      <Association Name="Hospital_HistoricalVisit" Member="HistoricalVisits" ThisKey="Guid" OtherKey="HospitalId" Type="HistoricalVisit" />
+      <Association Name="Hospital_HospitalDoctor" Member="HospitalDoctors" ThisKey="Guid" OtherKey="HospitalId" Type="HospitalDoctor" />
+      <Association Name="SysUser_Hospital" Member="SysUser" ThisKey="UserId" OtherKey="Guid" Type="SysUser" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HospitalDoctor" Member="HospitalDoctors">
+    <Type Name="HospitalDoctor">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HospitalId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DoctorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Doctor_HospitalDoctor" Member="Doctor" ThisKey="DoctorId" OtherKey="Guid" Type="Doctor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Hospital_HospitalDoctor" Member="Hospital" ThisKey="HospitalId" OtherKey="Guid" Type="Hospital" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Patient" Member="Patients">
+    <Type Name="Patient">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FamilyName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Egn" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Age" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePhone" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Patient_HistoricalReservation" Member="HistoricalReservations" ThisKey="Guid" OtherKey="PatientId" Type="HistoricalReservation" />
+      <Association Name="Patient_HistoricalDiagnosis" Member="HistoricalDiagnosis" ThisKey="Guid" OtherKey="PatientId" Type="HistoricalDiagnosis" />
+      <Association Name="Patient_HistoricalVisit" Member="HistoricalVisits" ThisKey="Guid" OtherKey="PatientId" Type="HistoricalVisit" />
+      <Association Name="SysUser_Patient" Member="SysUser" ThisKey="UserId" OtherKey="Guid" Type="SysUser" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SysUser" Member="SysUsers">
+    <Type Name="SysUser">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CreationDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="SysUser_Doctor" Member="Doctors" ThisKey="Guid" OtherKey="UserId" Type="Doctor" />
+      <Association Name="SysUser_Hospital" Member="Hospitals" ThisKey="Guid" OtherKey="UserId" Type="Hospital" />
+      <Association Name="SysUser_Patient" Member="Patients" ThisKey="Guid" OtherKey="UserId" Type="Patient" />
+      <Association Name="SysUserRole_SysUser" Member="SysUserRole" ThisKey="RoleId" OtherKey="Guid" Type="SysUserRole" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SysUserRole" Member="SysUserRoles">
+    <Type Name="SysUserRole">
+      <Column Name="ID" Member="Guid" Storage="_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="SysUserRole_SysUser" Member="SysUsers" ThisKey="Guid" OtherKey="RoleId" Type="SysUser" />
+    </Type>
+  </Table>
+</Database>

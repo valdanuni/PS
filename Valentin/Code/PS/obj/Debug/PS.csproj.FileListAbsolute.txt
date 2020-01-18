@@ -1,0 +1,182 @@
+C:\Users\Valentin\source\repos\PS\PS\bin\PS.dll.config
+C:\Users\Valentin\source\repos\PS\PS\bin\PS.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\PS.pdb
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\csc.exe
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\csc.exe.config
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\csc.rsp
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\csi.exe
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\csi.exe.config
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\csi.rsp
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.AppContext.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Console.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.IO.Compression.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Net.Http.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.ValueTuple.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\vbc.exe
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\vbc.exe.config
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\vbc.rsp
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Valentin\source\repos\PS\PS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Valentin\source\repos\PS\PS\bin\Antlr3.Runtime.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\dbup-core.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\dbup-sqlserver.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\Newtonsoft.Json.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Net.Http.Formatting.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Helpers.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Http.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Http.WebHost.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Mvc.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Optimization.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Razor.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.WebPages.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\WebGrease.dll
+C:\Users\Valentin\source\repos\PS\PS\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\Newtonsoft.Json.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Net.Http.Formatting.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Helpers.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Http.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Http.WebHost.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Mvc.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Optimization.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.Razor.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.WebPages.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Valentin\source\repos\PS\PS\bin\Antlr3.Runtime.pdb
+C:\Users\Valentin\source\repos\PS\PS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Valentin\source\repos\PS\PS\obj\Debug\PS.csprojAssemblyReference.cache
+C:\Users\Valentin\source\repos\PS\PS\obj\Debug\PS.csproj.CopyComplete
+C:\Users\Valentin\source\repos\PS\PS\obj\Debug\PS.dll
+C:\Users\Valentin\source\repos\PS\PS\obj\Debug\PS.pdb
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\PS.dll.config
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\PS.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\PS.pdb
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\csc.exe
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\csc.exe.config
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\csc.rsp
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\csi.exe
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\csi.exe.config
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\csi.rsp
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.AppContext.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Console.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.IO.Compression.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Net.Http.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.ValueTuple.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\vbc.exe
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\vbc.exe.config
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\vbc.rsp
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Antlr3.Runtime.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\dbup-core.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\dbup-sqlserver.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Newtonsoft.Json.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Net.Http.Formatting.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Helpers.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Http.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Http.WebHost.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Mvc.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Optimization.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Razor.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.WebPages.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\WebGrease.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Newtonsoft.Json.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Net.Http.Formatting.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Helpers.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Http.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Http.WebHost.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Mvc.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Optimization.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.Razor.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.WebPages.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Antlr3.Runtime.pdb
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\obj\Debug\PS.csproj.CopyComplete
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\obj\Debug\PS.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\obj\Debug\PS.pdb
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\obj\Debug\PS.csprojAssemblyReference.cache
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\AutoMapper.dll
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\AutoMapper.pdb
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\AutoMapper.xml
+C:\Users\Valentin Velkov\Documents\Custom\PS\PS\PS\bin\XmlDocument.xml

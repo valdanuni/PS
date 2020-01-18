@@ -1,0 +1,144 @@
+﻿<Window x:Class="PS_Hospital_System_Project_2019.EditForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PS_Hospital_System_Project_2019"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+          Title="" Height="650" Width="800"  ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen" IsEnabled="True" MaxWidth="800" MaxHeight="720" ScrollViewer.VerticalScrollBarVisibility="Disabled" MouseDown="Window_MouseDown" ShowInTaskbar="True" Focusable="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="303*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Height="668"  VerticalAlignment="Top" Margin="0,0,-3,-48" Grid.RowSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF93FA93"/>
+                    <GradientStop Color="#FF11E87C" Offset="0.2"/>
+                    <GradientStop Color="#FF5CD45A" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="450" Fill="White" VerticalAlignment="Bottom" Margin="19,0,25,79" RadiusY="21.2" RadiusX="21.2"/>
+        <Grid x:Name="AdminRegPatientForm" Height="542" VerticalAlignment="Bottom" Margin="40,0,10,-29" Visibility="Collapsed" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="AdminRegPatientRecord" Text="Edit Patient Record" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="303,-60,296,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="10,10,34,132" Height="400" Grid.ColumnSpan="2">
+                <TextBox x:Name="AdminPatientName" Text="{Binding AdminPatientProfile.Name}" materialDesign:HintAssist.Hint="First Name" Height="55" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminPatientName_TextChanged" />
+                <TextBox x:Name="AdminPatientMiddleName" Text="{Binding AdminPatientProfile.MiddleName}" materialDesign:HintAssist.Hint="Second Name" Height="59" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminPatientMiddleName_TextChanged" />
+                <TextBox x:Name="AdminPatientFamilyName" Text="{Binding AdminPatientProfile.FamilyName}" materialDesign:HintAssist.Hint="Last Name" Height="57" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminPatientFamilyName_TextChanged" />
+                <TextBox x:Name="AdminPatientAge" Text="{Binding AdminPatientProfile.Age}" materialDesign:HintAssist.Hint="Age" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminPatientAge_TextChanged" />
+                <TextBox x:Name="AdminPatientEgn" Text="{Binding AdminPatientProfile.Egn}" materialDesign:HintAssist.Hint="EGN" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminPatientEgn_TextChanged" />
+                <TextBox x:Name="AdminPatientAddress" Text="{Binding AdminPatientProfile.Address}" materialDesign:HintAssist.Hint="Address" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminPatientAddress_TextChanged" />
+                <TextBox x:Name="AdminPatientMobilePhone" Text="{Binding AdminPatientProfile.MobilePhone}" materialDesign:HintAssist.Hint="Mobile Phone" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminPatientMobilePhone_TextChanged" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="AdminRegDoctorForm" Height="393" VerticalAlignment="Bottom" Margin="19,0,31,105" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="AdminRegDoctorRecord" Text="Edit Doctor Record" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="313,-90,287,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="20,-36,0,0" Height="429" Grid.ColumnSpan="2">
+                <TextBox x:Name="AdminDoctorName" Text="{Binding Path=AdminDoctorProfile.Name}" materialDesign:HintAssist.Hint="First Name" Height="55" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminDoctorName_TextChanged" />
+                <TextBox x:Name="AdminDoctorMiddleName" Text="{Binding Path=AdminDoctorProfile.MiddleName}" materialDesign:HintAssist.Hint="Second Name" Height="59" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminDoctorMiddleName_TextChanged" />
+                <TextBox x:Name="AdminDoctorFamilyName" Text="{Binding Path=AdminDoctorProfile.FamilyName}" materialDesign:HintAssist.Hint="Last Name" Height="57" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminDoctorFamilyName_TextChanged" />
+                <TextBox x:Name="AdminDoctorEgn" Text="{Binding Path=AdminDoctorProfile.Egn}" materialDesign:HintAssist.Hint="EGN" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminDoctorEgn_TextChanged" />
+                <TextBox x:Name="AdminDoctorAddress" Text="{Binding Path=AdminDoctorProfile.Address}" materialDesign:HintAssist.Hint="Address" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminDoctorAddress_TextChanged" />
+                <TextBox x:Name="AdminDoctorMobilePhone" Text="{Binding Path=AdminDoctorProfile.MobilePhone}" materialDesign:HintAssist.Hint="Mobile Phone" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminDoctorMobilePhone_TextChanged" />
+                <TextBox x:Name="AdminDoctorSpecialization" Text="{Binding Path=AdminDoctorProfile.Specialization}"   materialDesign:HintAssist.Hint="Specialization" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0" TextChanged="AdminDoctorSpecialization_TextChanged"/>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="AdminRegHospitalForm" Height="318" VerticalAlignment="Bottom" Margin="40,0,10,79" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="AdminRegHospitalRecord" Text="Edit Hospital Record" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="261,-104,309,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2" Width="180"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="-18,0,38,41" Height="277" Grid.ColumnSpan="2">
+                <TextBox x:Name="AdminHospitalName" materialDesign:HintAssist.Hint="Hospital Name" Text="{Binding Path=AdminHospitalProfile.Name}" IsReadOnly="False" Height="42" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,30,0" TextChanged="AdminHospitalName_TextChanged" />
+                <TextBox x:Name="AdminHospitalOwner" Text="{Binding Path=AdminHospitalProfile.Owner}" materialDesign:HintAssist.Hint="Owner " Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,30,0" TextChanged="AdminHospitalOwner_TextChanged"/>
+                <TextBox x:Name="AdminHospitalAddress" Text="{Binding Path=AdminHospitalProfile.Address}" materialDesign:HintAssist.Hint="Address" Height="51" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,30,0" TextChanged="AdminHospitalAddress_TextChanged"/>
+                <TextBox x:Name="AdminHospitalMobilePhone" materialDesign:HintAssist.Hint="Mobile Phone" Text="{Binding Path=AdminHospitalProfile.MobilePhone}" IsReadOnly="False" Height="52" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="27,0,30,0" TextChanged="AdminHospitalMobilePhone_TextChanged"/>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="DoctorPatientVisitForm" Height="360" VerticalAlignment="Bottom" Margin="19,0,31,13" Visibility="Collapsed" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="345*"/>
+                <ColumnDefinition Width="47*"/>
+                <ColumnDefinition Width="51*"/>
+                <ColumnDefinition Width="307*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="DoctorPatientVisitationTitle" Text="Edit Patient Visitation" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="273,-134,271,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="4" Width="206"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="0,-32,20,123" Height="269" Grid.ColumnSpan="4">
+                <DatePicker x:Name="DoctorVisitDate" Text="{Binding Path=DoctorPatientProfile.Date}" materialDesign:HintAssist.Hint="Visitation Date" Height="91" Style="{StaticResource MaterialDesignFloatingHintDatePicker}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="10,0"/>
+                <materialDesign:TimePicker x:Name="DoctorVisitTime" Style="{StaticResource MaterialDesignFloatingHintTimePicker}" materialDesign:HintAssist.Hint="Visitation Time" Height="100"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="10,0"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid x:Name="DoctorReservationsForm" Height="340" VerticalAlignment="Bottom" Margin="25,0,25,8" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="DoctorReservationTitle" Text="Edit Reservation Record" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="278,-132,240,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2" Width="232"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="10,-51,10,143" Height="248" Grid.ColumnSpan="2">
+                <DatePicker x:Name="DoctorReservationDate" Text="{Binding Path=DoctorReservationProfile.Date}" materialDesign:HintAssist.Hint="Reservation Date" Height="81" Style="{StaticResource MaterialDesignFloatingHintDatePicker}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+                <materialDesign:TimePicker x:Name="DoctorReservationTime" Style="{StaticResource MaterialDesignFloatingHintTimePicker}" materialDesign:HintAssist.Hint="Reservation Time" Height="77"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+                <TextBox x:Name="DoctorReservationReason" materialDesign:HintAssist.Hint="Reason" Text="{Binding Path=DoctorReservationProfile.Reason}" IsReadOnly="False" Height="72" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="HospitalPatientForm" Height="340" VerticalAlignment="Bottom" Margin="25,0,25,8" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="HospitalPatientTitle" Text="Edit Hospital Patient Visitation" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="253,-136,246,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2" Width="251"></TextBlock>
+            <StackPanel VerticalAlignment="Bottom"  Margin="0,-32,20,124" Height="248" Grid.ColumnSpan="2">
+                <DatePicker x:Name="HospitalPatientDate" Text="{Binding Path=HospitalPatientProfile.Date}" materialDesign:HintAssist.Hint="Reservation Date" Height="88" Style="{StaticResource MaterialDesignFloatingHintDatePicker}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+                <materialDesign:TimePicker x:Name="HospitalPatientTime" Style="{StaticResource MaterialDesignFloatingHintTimePicker}" materialDesign:HintAssist.Hint="Reservation Time" Height="84"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid x:Name="HospitalReservationForm" Height="340" VerticalAlignment="Bottom" Margin="25,0,25,8" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="HospitalReservationTitle" Text="Edit Hospital Reservation" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="270,-142,278,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2" Width="202"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="10,-48,10,140" Height="248" Grid.ColumnSpan="2">
+                <DatePicker x:Name="HospitalReservationDate" Text="{Binding Path=HospitalReservationProfile.Date}" materialDesign:HintAssist.Hint="Reservation Date" Height="72" Style="{StaticResource MaterialDesignFloatingHintDatePicker}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+                <materialDesign:TimePicker x:Name="HospitalReservationTime" Style="{StaticResource MaterialDesignFloatingHintTimePicker}" materialDesign:HintAssist.Hint="Reservation Time" Height="78"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+                <TextBox x:Name="HospitalReservationReason" materialDesign:HintAssist.Hint="Reason" Text="{Binding Path=HospitalReservationProfile.Reason}" IsReadOnly="False" Height="76" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="PatientReservationsForm" Height="340" VerticalAlignment="Bottom" Margin="25,0,25,8" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="196*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="PatientReservationTitle" Text="Edit Reservation Record" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="262,-144,256,0" Foreground="Gray" FontSize="18" Height="28" Grid.ColumnSpan="2" Width="232"></TextBlock>
+            <StackPanel VerticalAlignment="Center"  Margin="10,-32,10,124" Height="248" Grid.ColumnSpan="2">
+                <DatePicker x:Name="PatientReservationsDate" Text="{Binding Path=PatientReservationProfile.Date}" materialDesign:HintAssist.Hint="Reservation Date" Height="79" Style="{StaticResource MaterialDesignFloatingHintDatePicker}"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+                <materialDesign:TimePicker x:Name="PatientReservationsTime" Style="{StaticResource MaterialDesignFloatingHintTimePicker}" materialDesign:HintAssist.Hint="Reservation Time" Height="79"  FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="0,0,10,0"/>
+            </StackPanel>
+        </Grid>
+        <Button x:Name="ExitBtn"  Background="Transparent"  BorderBrush="Transparent" HorizontalAlignment="Left" Margin="740,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.613,0.156" Width="60" Height="40" Click="ExitBtn_Click">
+            <ContentControl>
+                <Image Source="../Assets/xButton.png" Height="28" RenderTransformOrigin="0.5,0.5" Width="55" />
+            </ContentControl>
+        </Button>
+        <Button x:Name="minimizeBtn" Background="Transparent"  BorderBrush="Transparent" HorizontalAlignment="Left" Margin="704,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.613,0.156" Width="55" Height="40" Click="MinimizeBtn_Click" >
+            <ContentControl>
+                <Image Source="../Assets/minimize.png" Height="25" RenderTransformOrigin="0.5,0.5" Width="33" />
+            </ContentControl>
+        </Button>
+        <Button x:Name="saveBtn" Visibility="Collapsed" Content="Save" FontSize="18" Foreground="Black" Background="BlueViolet"  HorizontalAlignment="Left" Margin="25,602,0,13" Width="264" Height="Auto" Grid.RowSpan="2" Click="SaveBtn_Click"/>
+        <Button x:Name="deleteBtn" Visibility="Collapsed" Content="Delete" FontSize="18" Foreground="Black" Background="PaleVioletRed"  HorizontalAlignment="Right"  Width="264" Margin="0,602,41,13" Click="DeleteBtn_Click" Height="Auto" Grid.RowSpan="2"/>
+    </Grid> 
+</Window>
